@@ -1,0 +1,2 @@
+webpackJsonp([2],{82:function(e,t,l){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(){return u.default.createElement("div",null,u.default.createElement("h1",null,"Something wen","'","t wrong..."),u.default.createElement("span",{role:"img","aria-label":"Screaming Cat Emoji",stlye:{fontSize:"40px"}},"🙀"))};var n,a=l(0),u=(n=a)&&n.__esModule?n:{default:n}}});
+//# sourceMappingURL=2.bundle.js.map
