@@ -12,28 +12,18 @@ const config = {
     filename: 'bundle.js'
   },
   module: {
-    rules:
-      [
-        {
-          test: /\.jsx?/,
-          include: APP_DIR,
-          exclude: /(node_modules)/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env', '@babel/react'],
-              plugins: [
-                '@babel/syntax-dynamic-import',
-              ],
-            }
-          }
-        },
-        {
-          test: /\.jsx?/,
-          exclude: /node_modules/,
-          use: ['babel-loader', 'eslint-loader']
-        }
-      ]
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: '/node_modules/'
+      },
+      {
+        test: /\.jsx$/,
+        loader: 'babel-loader',
+        exclude: '/node_modules/'
+      }
+    ]
   },
   resolve: {
     extensions: ['.js', '.jsx']
