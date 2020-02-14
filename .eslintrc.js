@@ -16,7 +16,13 @@ module.exports = {
       }],
       'import/extensions': [2, "never"],
       'react/prefer-stateless-function': [2],
-      'no-console': 0
+      'no-console': 0,
+      'no-unused-vars': 0,
+      'no-undef': 0,
+      'react/jsx-closing-bracket-location': 0,
+      'linebreak-style': 0,
+      'semi': 0,
+      'comma-dangle': 0
   },
   settings: {
     flowtype: {

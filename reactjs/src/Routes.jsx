@@ -19,6 +19,12 @@ const AddPlant = Loadable({
   loading: Loading
 })
 
+
+const saskiaStuff = Loadable({
+  loader: () => import('./scenes/Stuff/Stuff'),
+  loading: Loading
+})
+
 const nan = Loadable({
   loader: () => import('./scenes/404/404'),
   loading: Loading
@@ -30,6 +36,7 @@ export default function Routes() {
       <Route exact path="/" component={StartScreen} />
       <Route path="/myPlants" component={myPlants} />
       <Route exact path="/addPlant" component={AddPlant} />
+      <Route exact path="/stuff" component={saskiaStuff} />
       <Route path="/404" component={nan} />
       <Redirect to="/404" />
     </Switch>

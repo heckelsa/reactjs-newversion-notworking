@@ -14,4 +14,7 @@ module.exports = [
   <Button backgroundColor="#92569f" key={generateId()} >
     <Link to="/myPlants">My Plants!</Link>
   </Button>,
+  <Button backgroundColor="#92569f" key={generateId()} >
+    <Link to="/stuff">Saskia stuff!</Link>
+  </Button>,
 ];
